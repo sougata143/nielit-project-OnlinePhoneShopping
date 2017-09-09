@@ -26,7 +26,8 @@ public class userDao {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping","root", "student");
+            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping",
+                    "root", "root");
         }catch(ClassNotFoundException ce){
             ce.printStackTrace();
         }
